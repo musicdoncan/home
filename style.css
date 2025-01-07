@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+    text-align: center;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'doncanfont';
+  }
+  @font-face {
+    font-family: doncanfont;
+    src: url(ADLaMDisplay-Regular.ttf);
+  }
+  .container-text {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: clamp(5px, 3vw, 30px);
+  }
+  .container-icons {
+    display:flex;
+    justify-content: center;
+  }
