@@ -48,7 +48,8 @@ body {
     max-width: clamp(5vw, 100vw, 800px);
     margin-left: 5%;
     margin-right: 5%;
-    }    a {
+    }    
+    a {
       text-decoration: none;
       color: #fde2a8;
     }
