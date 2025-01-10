@@ -43,13 +43,42 @@ body {
     color: #fde2a8;
     padding: 3px;
     cursor: pointer;
+    display: block;
     }
-    .textbio {
-    max-width: clamp(5vw, 100vw, 800px);
-    margin-left: 5%;
-    margin-right: 5%;
-    }    
+    summary::before {
+      margin-right: 1ch;
+      display: inline-block;
+      content: url(img/bricoright.png);
+      transition: 0.2s;
+    }
+    details[open] > summary::before {
+      transform: rotate(90deg);
+    }
     a {
       text-decoration: none;
       color: #fde2a8;
     }
+    .language-selector {
+      margin-top: 20px;
+  }
+  
+  .lang-icon {
+      width: 40px;
+      height: 30px;
+      margin: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+  }
+  .lang-icon:hover {
+      transform: scale(1.2); /* Effetto di ingrandimento quando si passa sopra con il mouse */
+  }
+
+.lang-content {
+    display: none;
+    max-width: clamp(5vw, 100vw, 800px);
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.lang-content.active {
+    display: block;
+}
