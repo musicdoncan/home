@@ -82,3 +82,24 @@ body {
 .lang-content.active {
     display: block;
 }
+.gallery {
+  display: grid;
+  gap: 16px;
+  padding: 10px;
+  max-width: 100%;
+  justify-content: center;
+  justify-items: center;
+}
+.gallery img {
+  width: 75%;
+  height: auto;
+  max-width: 800px;
+  border-radius: 1%;
+  object-fit: cover;
+  justify-content: center;
+}
+/* Se vuoi che le immagini si adattino meglio al contenitore */
+.details img {
+  max-width: 100%; /* Limita la larghezza a quella del contenitore */
+  height: auto;
+}
